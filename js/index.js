@@ -81,13 +81,9 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
-function redirectToHome(event) {
-  event.preventDefault();
-  document.getElementById("contact").style.display = "none";
-  document.getElementById("successMessage").style.display = "block";
-
-  setTimeout(() => {
-    event.target.submit();
-    window.location.href = "https://hassanmohamed20.github.io/Hassan-Portfolio-/#home";
-  }, 3000);
-}
+ document.addEventListener("DOMContentLoaded", function () {
+        const params = new URLSearchParams(window.location.search);
+        if (params.has("submitted")) {
+            window.location.href = "https://hassanmohamed20.github.io/Hassan-Portfolio/#home";
+        }
+    })
