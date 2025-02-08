@@ -81,9 +81,11 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
+
+
  document.addEventListener("DOMContentLoaded", function () {
         const params = new URLSearchParams(window.location.search);
         if (params.has("submitted")) {
-            window.location.href = "https://hassanmohamed20.github.io/Hassan-Portfolio/#home";
+            window.location.href = "https://hassanmohamed20.github.io/Hassan-Portfolio-/";
         }
     })
