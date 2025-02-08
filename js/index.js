@@ -88,6 +88,6 @@ function redirectToHome(event) {
 
   setTimeout(() => {
     event.target.submit();
-    window.location.href = "http://127.0.0.1:5500/#home";
+    window.location.href = "https://hassanmohamed20.github.io/Hassan-Portfolio-/#home";
   }, 3000);
 }
